@@ -1,0 +1,31 @@
+[{
+    "name": "First Semester",
+    "courses": [{
+      "name": "Digital Logics",
+      "grade": "B+",
+      "credit": 3
+    }, {
+      "name": "Introduction to Computational Thinking",
+      "grade": "B+",
+      "credit": 3
+    }, {
+      "name": "Engineering Mathematics 1",
+      "grade": "B+",
+      "credit": 3
+    }]
+  },{
+    "name": "Second Semester",
+    "courses": [{
+      "name": "Digital Logics",
+      "grade": "B+",
+      "credit": 3
+    }, {
+      "name": "Introduction to Computational Thinking",
+      "grade": "B+",
+      "credit": 3
+    }, {
+      "name": "Engineering Mathematics 1",
+      "grade": "B+",
+      "credit": 3
+    }]
+  }]
