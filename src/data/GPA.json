@@ -2,30 +2,46 @@
     "name": "First Semester",
     "courses": [{
       "name": "Digital Logics",
-      "grade": "B+",
+      "grade": "A",
       "credit": 3
     }, {
       "name": "Introduction to Computational Thinking",
-      "grade": "B+",
+      "grade": "A",
       "credit": 3
     }, {
       "name": "Engineering Mathematics 1",
-      "grade": "B+",
+      "grade": "A",
+      "credit": 3
+    }, {
+      "name": "Engineering Mathematics 1",
+      "grade": "A",
+      "credit": 3
+    }, {
+      "name": "Engineering Mathematics 1",
+      "grade": "A",
       "credit": 3
     }]
   },{
     "name": "Second Semester",
     "courses": [{
       "name": "Digital Logics",
-      "grade": "B+",
+      "grade": "A",
       "credit": 3
     }, {
       "name": "Introduction to Computational Thinking",
-      "grade": "B+",
+      "grade": "A",
       "credit": 3
     }, {
       "name": "Engineering Mathematics 1",
-      "grade": "B+",
+      "grade": "A",
+      "credit": 3
+    }, {
+      "name": "Engineering Mathematics 1",
+      "grade": "A-",
+      "credit": 3
+    }, {
+      "name": "Engineering Mathematics 1",
+      "grade": "A-",
       "credit": 3
     }]
   }]

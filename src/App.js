@@ -17,19 +17,25 @@ import { GlobalContext } from "./context/context";
 library.add(faTimes, faDownload, faUpload);
 
 const App = () => {
-  const { gpaData } = useContext(GlobalContext);
-  console.log(gpaData);
+  const { gpaData, getCGPA, addSemester, removeSemester, getSGPA } = useContext(
+    GlobalContext
+  );
+  // console.log(getGPA());
   return (
     <div className="App">
       <div className="container mt-5 mb-5">
-        <CGPA />
+        <CGPA cgpa={getCGPA} />
         <hr />
         <CourseInput gpaData={gpaData} />
         <hr />
-        <SemesterInput />
+        <SemesterInput addSemester={addSemester} />
         <hr />
         <SubHeader />
-        <SemesterGroup gpaData={gpaData} />
+        <SemesterGroup
+          gpaData={gpaData}
+          sgpa={getSGPA}
+          removeSemester={removeSemester}
+        />
       </div>
     </div>
   );

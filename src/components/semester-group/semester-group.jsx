@@ -6,7 +6,12 @@ class SemesterGroup extends Component {
     return (
       <div className="row">
         {this.props.gpaData.map((semester) => (
-          <Semester semester={semester} key={semester.name} />
+          <Semester
+            semester={semester}
+            key={semester.name}
+            calSGPA={this.props.sgpa}
+            removeSemester={this.props.removeSemester}
+          />
         ))}
       </div>
     );

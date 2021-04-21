@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Semester extends Component {
   render() {
-    console.log(this.props);
+    // console.log(this.props);
     return (
       <div className="col-12 col-lg-6 mt-2" style={{ color: "black" }}>
         <div className="semester card">
@@ -12,15 +12,13 @@ class Semester extends Component {
               <div className="d-flex justify-content-between align-items-center">
                 {this.props.semester.name}
                 <span className="semester__gpa badge badge-warning ml-2">
-                  {/* {this.props.gpaStore!.getGpa(this.props.semester)} */}6
+                  {this.props.calSGPA(this.props.semester)}
                 </span>
               </div>
               <span
                 className="semester__delete-button text-danger mr-2"
                 style={{ cursor: "pointer" }}
-                // onClick={() =>
-                //   this.props.gpaStore!.removeSemester(this.props.semester)
-                // }
+                onClick={() => this.props.removeSemester(this.props.semester)}
               >
                 <FontAwesomeIcon icon="times" />
               </span>

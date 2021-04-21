@@ -31,11 +31,11 @@ class CourseInput extends Component {
   //   };
 
   render() {
-    console.log(Grade);
-    console.log(this.props);
+    // console.log(Grade);
+    // console.log(this.props);
 
-    Grade.map((setting) => console.log(setting.Grade));
-    Grade.map((setting) => console.log(setting.Point));
+    // Grade.map((setting) => console.log(setting.Grade));
+    // Grade.map((setting) => console.log(setting.Point));
     return (
       <form className="course-input">
         <div className="form-row">
@@ -108,7 +108,7 @@ class CourseInput extends Component {
             >
               <option>Select Grade</option>
               {Grade.map((grade, key) => (
-                <option value={grade.Point} key={key}>
+                <option value={grade.Grade} key={key}>
                   {grade.Grade}
                 </option>
               ))}
