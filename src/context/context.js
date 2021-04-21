@@ -4,8 +4,8 @@ import initalGpaData from "./../data/GPA.json";
 
 //const initailState = [];
 
-export const GPACalContext = createContext(initalGpaData);
-export const Provider = ({ children }) => {
+export const GlobalContext = createContext(initalGpaData);
+export const GlobalProvider = ({ children }) => {
   const [gpaData, dispatch] = useReducer(contextReducer, initalGpaData);
   //Action Creators
   const removeCourse = (id) => dispatch({ type: "REMOVE_COURSE", payload: id });
@@ -13,8 +13,8 @@ export const Provider = ({ children }) => {
   const addTransaction = (transaction) =>
     dispatch({ type: "ADD_TRANSACTION", payload: transaction });
   return (
-    <GPACalContext.Provider value={{ removeCourse, addTransaction, gpaData }}>
+    <GlobalContext.Provider value={{ removeCourse, addTransaction, gpaData }}>
       {children}
-    </GPACalContext.Provider>
+    </GlobalContext.Provider>
   );
 };

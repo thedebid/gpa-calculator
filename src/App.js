@@ -12,12 +12,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import SubHeader from "./components/sub-header/sub-header";
 import SemesterInput from "./components/semester-input/semester-input";
-import { GPACalContext } from "./context/context";
+import { GlobalContext } from "./context/context";
 
 library.add(faTimes, faDownload, faUpload);
 
 const App = () => {
-  const { gpaData } = useContext(GPACalContext);
+  const { gpaData } = useContext(GlobalContext);
   console.log(gpaData);
   return (
     <div className="App">
