@@ -19,8 +19,8 @@ function SemesterInput(props) {
           >
             <option defaultValue>Select a semester</option>
             {Semesters.map((index, key) => (
-              <option value={index} key={key}>
-                {index}
+              <option value={index.name} key={key}>
+                {index.name}
               </option>
             ))}
           </select>
