@@ -12,7 +12,7 @@ function SemesterInput(props) {
   return (
     <form onSubmit={(e) => e.preventDefault()}>
       <div className="form-row mt-2">
-        <div className="col-8">
+        <div className="col-lg-8 col-xs-12 mt-2">
           <select
             className="form-control"
             onChange={(e) => setSelectedSemester(e.target.value)}
@@ -25,7 +25,7 @@ function SemesterInput(props) {
             ))}
           </select>
         </div>
-        <div className="col-4">
+        <div className="col-lg-4 col-xs-12 mt-2">
           <button
             type="submit"
             className="btn btn-success w-100"
