@@ -36,7 +36,7 @@ const App = () => {
         <hr />
         <SemesterInput addSemester={addSemester} />
         <hr />
-        <SubHeader />
+        <SubHeader gpaData={gpaData} />
         <SemesterGroup
           gpaData={gpaData}
           sgpa={getSGPA}

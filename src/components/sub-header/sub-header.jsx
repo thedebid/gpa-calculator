@@ -2,10 +2,10 @@ import React from "react";
 import Downloader from "./downloader";
 //import Importer from "./importer";
 
-const SubHeader = () => (
+const SubHeader = (props) => (
   <div className="text-right">
     {/* <Importer /> */}
-    <Downloader />
+    <Downloader gpaData={props.gpaData} />
   </div>
 );
 
