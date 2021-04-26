@@ -56,6 +56,12 @@ const contextReducer = (state, action) => {
       localStorage.setItem("GPAData", JSON.stringify(semesters));
       return semesters;
 
+    case "IMPORT_JSON":
+      localStorage.setItem("GPAData", action.payload);
+      const data = JSON.parse(localStorage.getItem("GPAData")) || [];
+      state = data.slice(0);
+      // console.log(state);
+      return state;
     default:
       return state;
   }

@@ -25,6 +25,7 @@ const App = () => {
     addCourse,
     removeCourse,
     getSGPA,
+    importFromJson,
   } = useContext(GlobalContext);
   // console.log(getGPA());
   return (
@@ -36,7 +37,7 @@ const App = () => {
         <hr />
         <SemesterInput addSemester={addSemester} />
         <hr />
-        <SubHeader gpaData={gpaData} />
+        <SubHeader gpaData={gpaData} importFromJson={importFromJson} />
         <SemesterGroup
           gpaData={gpaData}
           sgpa={getSGPA}

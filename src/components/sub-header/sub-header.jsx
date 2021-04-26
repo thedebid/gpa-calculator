@@ -1,10 +1,10 @@
 import React from "react";
 import Downloader from "./downloader";
-//import Importer from "./importer";
+import Importer from "./importer";
 
 const SubHeader = (props) => (
   <div className="text-right">
-    {/* <Importer /> */}
+    <Importer gpaData={props.gpaData} importFromJson={props.importFromJson} />
     <Downloader gpaData={props.gpaData} />
   </div>
 );

@@ -28,6 +28,9 @@ export const GlobalProvider = ({ children }) => {
   const removeCourse = (semester, course) => {
     dispatch({ type: "REMOVE_COURSE", payload: { semester, course } });
   };
+  const importFromJson = (data) => {
+    dispatch({ type: "IMPORT_JSON", payload: data });
+  };
 
   const getCGPA = () => {
     let points = 0;
@@ -79,6 +82,7 @@ export const GlobalProvider = ({ children }) => {
         addCourse,
         getSGPA,
         gpaData,
+        importFromJson,
       }}
     >
       {children}
